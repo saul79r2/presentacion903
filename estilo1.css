@@ -1,0 +1,146 @@
+header{
+    margin:0px auto;
+    padding: 10px ;
+    background-color: rgb(70, 107, 228);
+    width:790px;
+    height:150px;
+   
+}
+
+.container1{
+margin:0px auto;
+background-color: rgb(0, 162, 255);
+width: 790px;
+height: 1150px;
+padding: 30px;
+}
+
+
+ul, li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+
+ul.slider{
+position:relative;
+width: 800px;
+height: 450px;
+}
+
+ul.slider li{
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0;
+    width: inherit;
+    height:inherit;
+    transition:opacity 1s;
+}
+
+ul.slider li img{
+    width:750px;
+    height: 450px;
+    object-fit:cover;
+}
+
+ul.slider li:first-child{
+opacity:1;
+}
+
+ul.slider li:target{
+ opacity:1;
+}
+
+ul.menu{
+    text-align:center;
+    margin: 20px;;
+}
+
+.menu li{
+    display:inline-block;
+    text-align:center;
+}
+
+.menu li a{
+    display:inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(115, 121, 126);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size:20px;
+    border-radius:100%;
+}
+
+
+.navegacion{
+    width: 740px;
+    background-color:blue;
+    text-align: center;
+    margin: 10px;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.barra>li{
+    position: relative;
+    display: inline-block;
+}
+
+.barra>li>a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: green;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.barra>li>a:hover{
+    background-color: rgb(230, 228, 162);
+    color: rgb(16, 17, 17);
+}
+
+
+/* ESTILOS DE BOTONES */
+#boton-mas{
+    display: none;
+}
+.ICONOS{
+    position: fixed;
+    font-size:x-large;
+    color:#dbe6f6;
+    bottom: 30px;
+    right: 30px;
+}
+
+.redes a, .icon-plus{
+    display: block;
+    text-decoration: none;
+    background-color:darkblue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background-color: white;
+    color: red;
+} 
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#boton-mas:checked~ .redes a{
+    margin-bottom: 15px;
+    opacity: 1;
+    visibility: visible;
+}
